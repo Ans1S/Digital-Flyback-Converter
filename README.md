@@ -122,7 +122,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 
 ### 1️⃣ **Digital Power Conversion with Precision Feedback**
 <div align="center">
-  <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="800" height="600">
+  <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="620" height="853">
 </div>
 
 **Challenge:** Maintain voltage/current stability across the entire load range.
@@ -132,7 +132,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 
 ### 2️⃣ **Multi-Mode Power Supply with Automatic Switching**
 <div align="center">
-  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="800" height="600">
+  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="894" height="577">
 </div>
 
 **Challenge:** Seamless CC/CV operation for diverse loads (LEDs, laboratory applications).
