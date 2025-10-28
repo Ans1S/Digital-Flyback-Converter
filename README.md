@@ -377,11 +377,7 @@ For questions about the architecture, implementation details, or technical decis
 
 ## 📄 Additional Resources
 
-- **Technical Datasheet:** `/marketing/latex_product_datasheet/DIG-CCCV-15W_datasheet.tex`
-- **Measurement Data:** `/Mess/` directory (efficiency, thermal, EMC results)
-- **KiCad Design Files:** `/PCB/V5/` (final production PCB)
-- **Firmware Source:** `/SW/15WDigitalFlybackSoftware/` (STM32 C code)
-- **Simulation Models:** `/simulation/ltspice/` (SPICE converter models)
+- **Bachelor Thesis:** `/Bachelor_thesis/` - Complete technical documentation of the 15W Digital Flyback Converter project, including detailed design methodology, measurements, and analysis
 
 ---
 
