@@ -100,9 +100,29 @@ A complete power supply system consisting of:
 
 ## 🎓 Key Technical Achievements
 
+### 🚀 **From Prototype to Production**
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="images/3D_V1-P.png?raw=true" alt="First Prototype V1-P" width="800" height="600">
+        <p><strong>V1-P: First Prototype</strong></p>
+      </td>
+      <td align="center">
+        <img src="images/V5.png?raw=true" alt="Final Production V5" width="800" height="600">
+        <p><strong>V5: Final Production</strong></p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+The evolution from initial concept to market-ready product, demonstrating continuous refinement through 6 design iterations.
+
+---
+
 ### 1️⃣ **Digital Power Conversion with Precision Feedback**
 <div align="center">
-  <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="600" height="450">
+  <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="800" height="600">
 </div>
 
 **Challenge:** Maintain voltage/current stability across the entire load range.
@@ -112,7 +132,7 @@ A complete power supply system consisting of:
 
 ### 2️⃣ **Multi-Mode Power Supply with Automatic Switching**
 <div align="center">
-  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="600" height="450">
+  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="800" height="600">
 </div>
 
 **Challenge:** Seamless CC/CV operation for diverse loads (LEDs, laboratory applications).
@@ -133,7 +153,7 @@ A complete power supply system consisting of:
 
 ### 3️⃣ **Comprehensive Hardware Integration & Protection**
 <div align="center">
-  <img src="images/V5.png?raw=true" alt="Final PCB Design V5" width="500" height="400">
+  <img src="images/V5.png?raw=true" alt="Final PCB Design V5" width="800" height="600">
 </div>
 
 **Challenge:** Integration of analog control, digital MCU, high-voltage power stage, and protection circuits.
