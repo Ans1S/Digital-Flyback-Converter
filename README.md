@@ -109,7 +109,7 @@ A complete power supply system consisting of:
         <p><strong>V1-P: First Prototype</strong></p>
       </td>
       <td align="center">
-        <img src="images/V5.png?raw=true" alt="Final Production V5" width="800" height="600" style="transform: rotate(90deg);">
+        <img src="images/5V_long.png?raw=true" alt="Final Production V5" width="800" height="600">
         <p><strong>V5: Final Production</strong></p>
       </td>
     </tr>
@@ -132,7 +132,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 
 ### 2️⃣ **Multi-Mode Power Supply with Automatic Switching**
 <div align="center">
-  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="694" height="377">
+  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="694" height="477">
 </div>
 
 **Challenge:** Seamless CC/CV operation for diverse loads (LEDs, laboratory applications).
