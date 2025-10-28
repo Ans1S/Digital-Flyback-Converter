@@ -102,7 +102,8 @@ A complete power supply system consisting of:
 
 ### 1️⃣ **Digital Power Conversion with Precision Feedback**
 <div align="center">
-  <img src="images/15WFlybackLED_V.png?raw=true" alt="Flyback Converter Front" width="500" height="400">
+  <img src="images/3D_V1-P.png?raw=true" alt="V1 Prototype Assembly" width="600" height="450">
+  <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="600" height="450">
 </div>
 
 **Challenge:** Maintain voltage/current stability across the entire load range.
@@ -110,33 +111,9 @@ A complete power supply system consisting of:
 - **Solution:** Cascaded/PI control loop with 16kHz (62.5µs) cycle time.
 - **Innovation:** Software-based regulation enables dynamic adjustments and protection functions.
 
-**Technical Details:**
-```c
-// Real-time control loop in STM32 firmware
-void regulation_loop(void) {
-    // Read voltage/current via ADC
-    uint16_t adc_voltage = read_adc_voltage();
-    uint16_t adc_current = read_adc_current();
-    
-    // Calculate error (setpoint vs. actual)
-    int32_t voltage_error = config.setpoint_voltage - adc_to_voltage(adc_voltage);
-    int32_t current_error = config.setpoint_current - adc_to_current(adc_current);
-    
-    // Apply PI controller (voltage and current)
-    uint32_t energy_demand_v = voltage_controller(voltage_error);
-    uint32_t energy_demand_c = current_controller(current_error);
-
-    // Select minimum energy (CC or CV)
-    uint32_t final_energy = min(energy_demand_v, energy_demand_c);
-
-    // Update PWM duty cycle
-    update_pwm_feedback(energy_to_duty_cycle(final_energy));
-}
-```
-
 ### 2️⃣ **Multi-Mode Power Supply with Automatic Switching**
 <div align="center">
-  <img src="images/15WFlybackLED_B.png?raw=true" alt="Flyback Converter Back" width="500" height="400">
+  <img src="images/15W-Side.png?raw=true" alt="15W Flyback Converter Side" width="600" height="450">
 </div>
 
 **Challenge:** Seamless CC/CV operation for diverse loads (LEDs, laboratory applications).
@@ -170,7 +147,7 @@ void regulation_loop(void) {
 
 ### 4️⃣ **Robust Firmware Architecture for Production Readiness**
 <div align="center">
-  <img src="images/3D_V1-P.png?raw=true" alt="V1 Prototype Assembly" width="500" height="400">
+  <img src="images/reg.png?raw=true" alt="Regulation System" width="700" height="450">
 </div>
 
 **Challenge:** Creation of reliable, maintainable firmware for embedded power control.
@@ -192,7 +169,7 @@ void regulation_loop(void) {
 | **V3-P** | Further optimization | ✅ Tested |
 | **V4-Release** | Production candidate | ✅ Manufacturing ready |
 | **V5** | **Final Production** | ✅ **Active** |
-| **V6** | Next-generation planning | 🔄 In development |
+| **V6** | Next-generation planning | ✅ **In Production** |
 
 **Design Improvements:**
 - Thermal management optimization (V1→V5)
@@ -377,7 +354,14 @@ For questions about the architecture, implementation details, or technical decis
 
 ## 📄 Additional Resources
 
-- **Bachelor Thesis:** `/Bachelor_thesis/` - Complete technical documentation of the 15W Digital Flyback Converter project, including detailed design methodology, measurements, and analysis
+- **Product Datasheet:** `Datasheet/DIG-CCCV-15W_datasheet.pdf` - Official technical specifications and operating guidelines
+- **Bachelor Thesis PDF:** `Bachelor_thesis/BA_Anselm_Scherr.pdf` - Complete technical documentation including:
+  - Detailed design methodology and derivations
+  - Comprehensive measurement results and characterization
+  - Simulation analysis and validation
+  - PCB layout and manufacturing considerations
+  - Firmware architecture and control algorithms
+  - EMC testing and compliance documentation
 
 ---
 
