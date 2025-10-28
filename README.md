@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <img src="images/V5.png?raw=true" alt="15W Flyback PSU Final Design" width="600" height="500">
+  <img src="images/V5.png?raw=true" alt="15W Flyback PSU Final Design" width="900" height="750">
   <p align="center">
     <strong>A sophisticated power electronics project combining digital control, embedded firmware, and precision PCB design</strong>
   </p>
