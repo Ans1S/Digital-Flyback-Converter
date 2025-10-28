@@ -109,7 +109,7 @@ A complete power supply system consisting of:
         <p><strong>V1-P: First Prototype</strong></p>
       </td>
       <td align="center">
-        <img src="images/5V_long.png?raw=true" alt="Final Production V5" width="800" height="600">
+        <img src="images/5V_long.png?raw=true" alt="Final Production V5" width="600" height="800">
         <p><strong>V5: Final Production</strong></p>
       </td>
     </tr>
