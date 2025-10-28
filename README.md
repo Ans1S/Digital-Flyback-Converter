@@ -102,7 +102,6 @@ A complete power supply system consisting of:
 
 ### 1️⃣ **Digital Power Conversion with Precision Feedback**
 <div align="center">
-  <img src="images/3D_V1-P.png?raw=true" alt="V1 Prototype Assembly" width="600" height="450">
   <img src="images/15W.png?raw=true" alt="15W Flyback PSU" width="600" height="450">
 </div>
 
