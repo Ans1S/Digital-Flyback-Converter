@@ -1,0 +1,33 @@
+# Bachelor Thesis - Keep locally, don't commit to repository
+Bachelor_thesis/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Build artifacts
+*.o
+*.elf
+*.hex
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Node modules
+node_modules/
+
+# Temporary files
+*.tmp
+*.temp
