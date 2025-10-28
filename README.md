@@ -362,12 +362,12 @@ This project demonstrates comprehensive competencies in:
 
 ---
 
-## 📞 Project Contact
+## 📞 Project Collaboration
 
-For questions about the architecture, implementation details, or technical decisions:
+This project was developed in collaboration with:
 
-- **Dr. Michael Heidinger** - michael.heidinger@digitalpowersystems.eu
-- **Anselm Scherr** - anselm.scherr@digitalpowersystems.eu
+- **Dr. Michael Heidinger** - Digital Power Systems (Project supervision and technical guidance)
+- **Prof. Dr. rer. nat. Uli Lemmer** - Lichttechnisches Institut (LTI), Karlsruhe Institute of Technology (KIT) (Academic supervision and institutional support)
 
 ---
 
