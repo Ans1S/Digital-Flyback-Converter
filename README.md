@@ -374,13 +374,6 @@ This project was developed in collaboration with:
 ## 📄 Additional Resources
 
 - **Product Datasheet:** `Datasheet/DIG-CCCV-15W_datasheet.pdf` - Official technical specifications and operating guidelines
-- **Bachelor Thesis PDF:** `Bachelor_thesis/BA_Anselm_Scherr.pdf` - Complete technical documentation including:
-  - Detailed design methodology and derivations
-  - Comprehensive measurement results and characterization
-  - Simulation analysis and validation
-  - PCB layout and manufacturing considerations
-  - Firmware architecture and control algorithms
-  - EMC testing and compliance documentation
 
 ---
 
