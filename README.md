@@ -204,7 +204,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 |----------|---------|
 | **Input Voltage** | 230V AC, RMS |
 | **Output Power** | 15W |
-| **Output Modes** | Constant Current (0.1A - 1.2A) / Constant Voltage (10V - 60V) |
+| **Output Modes** | Constant Current (0A - 1.2A) / Constant Voltage (10V - 60V) |
 | **Accuracy** | ±2% (design target) |
 | **Isolation** | Galvanic isolation via Flyback transformer |
 | **Communication** | Serial UART |
