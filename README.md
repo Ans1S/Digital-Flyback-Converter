@@ -42,13 +42,13 @@ A complete power supply system consisting of:
 ## 🛠️ Technical Architecture
 
 ### Hardware Stack
-- **MCU:** STM32L011F4U3TR (ARM Cortex-M0+, 32KB Flash, 8KB RAM)
+- **MCU:** STM32L011 (ARM Cortex-M0+, 32KB Flash, 8KB RAM)
 - **Power Topology:** Galvanically isolated Flyback Converter
 - **Input Stage:** 230V AC rectification with EMI filter
 - **Output Control:** PWM switching (MOSFET) with frequencies from 22-120kHz
 - **Measurement:** 12-bit ADC (base resolution)
 - **Communication:** UART interface
-- **Feedback Elements:** Digital isolator (CA-IS3722HS), relay output for status indication
+- **Feedback Elements:** Digital isolator, relay output for status indication
 
 ### Software Stack
 | Layer | Technology | Purpose |
@@ -63,7 +63,7 @@ A complete power supply system consisting of:
 ### System Architecture Diagram
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│            PC Control Software (Serial Interface)            │
+│            PC Control Software (Serial Interface)           │
 │  ┌────────────────────────────────────────────────────────┐ │
 │  │  Configuration │ Real-Time Monitoring │ Logging        │ │
 │  │  • Output V/I  │ • Voltage/Current    │ • Data Export  │ │
@@ -83,13 +83,13 @@ A complete power supply system consisting of:
     │ • PWM Gen.   │      │ • Voltage FB  │
     │ • UART Comm. │      │ • Current FB  │
     │ • Protection │      │ • Temp Sense  │
-    └───┬──────────┴──────┬─────────────┘
+    └───┬──────────┴──────┬───────────────┘
         │                 │
-    ┌───▼─────────────┬──▼──────────┐
+    ┌───▼─────────────┬───▼─────────┐
     │                 │             │
-┌──▼──┐  ┌────────┐ ┌▼────┐  ┌───▼──┐
-│Relay│  │Dimming │ │Gate │  │Feedback│
-│Out  │  │Input   │ │Drv  │  │Digital │
+┌───▼─┐  ┌────────┐ ┌─▼───┐  ┌──────▼──┐
+│Relay│  │Dimming │ │Gate │  │Feedback │
+│Out  │  │Input   │ │Drv  │  │Digital  │
 └─────┘  └────────┘ └─────┘  └ Isolator┘
 
 230V AC Input → Rectification → Flyback Transformer
@@ -159,7 +159,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 **Challenge:** Integration of analog control, digital MCU, high-voltage power stage, and protection circuits.
 
 **Solution:** Integrated multi-layer PCB design with:
-- **Isolated Feedback:** PWM transmission via digital isolator (CA-IS3722HS) for safe control.
+- **Isolated Feedback:** PWM transmission via digital isolator for safe control.
 - **Measurement Acquisition:** Voltage and current measurement via shunt and differential amplifier.
 - **Relay Feedback:** Status output for relay contact.
 - **Dimming Input:** 4-stage external dimming.
@@ -208,7 +208,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 | **Accuracy** | ±2% (design target) |
 | **Isolation** | Galvanic isolation via Flyback transformer |
 | **Communication** | Serial UART |
-| **MCU** | STM32L011F4U3TR |
+| **MCU** | STM32L011 |
 | **ADC Resolution** | 12-bit base, 14-bit with oversampling |
 | **PWM Frequency** | 22kHz - 120kHz (depending on load) |
 | **Protection Features** | OVP, OCP, OTP, UVP, short-circuit protection, no-load protection |
@@ -240,8 +240,8 @@ The evolution from initial concept to market-ready product, demonstrating contin
 - Error reporting
 
 **Power Electronics Design**
-- Storage transformer dimensioning (370 µH)
-- MOSFET selection (OSG80R1K4DF) and snubber design
+- Storage transformer dimensioning
+- MOSFET selection and snubber design
 - EMC compliance (CISPR 32) via EMI filtering
 - Longevity through elimination of electrolytic capacitors
 
@@ -275,19 +275,19 @@ The evolution from initial concept to market-ready product, demonstrating contin
 ### Performance Validation
 
 ```
-┌──────────────────────────────────────────────────────┐
-│     15W Flyback Converter Performance Data           │
-├──────────────────────────────────────────────────────┤
-│ Constant Current Accuracy   │ ±1.8% @ 1.2A setpoint│
-│ Constant Voltage Accuracy   │ ±2.1% @ 48V setpoint │
-│ Load Transient Response     │ 45ms (design target)  │
-│ Output Voltage Ripple       │ 85mV peak @ 1.2A CC  │
-│ Output Current Ripple       │ < 133mA peak @ 24V   │
-│ Full-Load Efficiency        │ 82.5% @ 15W (target) │
+┌─────────────────────────────────────────────────────────┐
+│     15W Flyback Converter Performance Data              │
+├─────────────────────────────────────────────────────────┤
+│ Constant Current Accuracy   │ ±1.8% @ 1.2A setpoint     │
+│ Constant Voltage Accuracy   │ ±2.1% @ 48V setpoint      │
+│ Load Transient Response     │ 45ms (design target)      │
+│ Output Voltage Ripple       │ 85mV peak @ 1.2A CC       │
+│ Output Current Ripple       │ < 133mA peak-to-peak @ 24V│
+│ Full-Load Efficiency        │ 82.5% @ 15W (target)      │
 │ Thermal Steady-State (25°C) │ +22.9°C (MOSFET @ 47.7°C) │
-│ Protection Response Time    │ < 2ms (software)     │
-│ UART Command Latency        │ < 10ms (design target) │
-└──────────────────────────────────────────────────────┘
+│ Protection Response Time    │ < 2ms (software)          │
+│ UART Command Latency        │ < 10ms (design target)    │
+└─────────────────────────────────────────────────────────┘
 ```
 
 ### EMC Testing (Electromagnetic Compatibility)
