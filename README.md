@@ -29,7 +29,7 @@ Development of a production-grade power supply capable of:
 ### ✅ Solution Delivered
 A complete power supply system consisting of:
 
-- **STM32L011F4U3TR MCU:** ARM Cortex-M0+ with integrated ADC and PWM capabilities
+- **STM32L011 MCU:** ARM Cortex-M0+ with integrated ADC and PWM capabilities
 - **Flyback Topology:** Galvanically isolated 230V AC to variable DC output
 - **Digital Regulation:** PWM-based feedback via digital isolator
 - **Communication:** Serial UART interface for computer control
