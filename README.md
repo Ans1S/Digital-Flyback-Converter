@@ -138,7 +138,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 **Challenge:** Seamless CC/CV operation for diverse loads (LEDs, laboratory applications).
 
 **Constant Current Mode (CC):**
-- Fixed current output (programmable 0.1A - 1.2A)
+- Fixed current output (programmable 0A - 1.2A)
 - Automatic voltage limiting
 - Ideal for LED strings
 
