@@ -216,7 +216,7 @@ The evolution from initial concept to market-ready product, demonstrating contin
 | **Dimming Control** | 4-stage via external contacts |
 | **Efficiency** | > 80% (typical) |
 | **Development Time** | Bachelor thesis |
-| **Team Size** | Individual contributor (Anselm Scherr) |
+| **Team Size** | Dr. Michael Heidinger and Ans1S |
 
 ---
 
